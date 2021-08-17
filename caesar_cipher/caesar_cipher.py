@@ -68,7 +68,7 @@ def crack(ciphertext):
         word_decrypted =  decrypt(ciphertext,i)
         word = re.sub(r'[^A-Za-z]+','', word_decrypted)
         if word.lower() in word_list or word in name_list:
-            print(word_decrypted)
+            return (word_decrypted)
 
 encrypted_word = encrypt('Hello!3', 7)
 decrypted_word= decrypt(encrypted_word, 7)
